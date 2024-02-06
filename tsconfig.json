@@ -1,5 +1,25 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/types": ["src/types/index.ts"],
+      "@/templates": ["src/components/templates"],
+      "@/organisms": ["src/components/organisms"],
+      "@/molecules": ["src/components/molecules"],
+      "@/atoms": ["src/components/atoms"],
+      "@/utils/*": ["src/utils/*"],
+      "@/icons": ["src/components/icons"],
+      "@/icons/*": ["src/components/icons/*"],
+      "@/hooks": ["src/hooks"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/config": ["config/index.ts"],
+      "@/constants": ["constants/index.ts"],
+      "@/constants/*": ["constants/*"],
+      "@/api": ["src/utils/api"],
+      "@/api/*": ["src/utils/api/*"],
+      "@src/*": ["src/*"]
+    },
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,10 +32,18 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
