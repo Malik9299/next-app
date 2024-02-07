@@ -1,32 +1,63 @@
 import React, { FC } from "react";
+import Link from "next/link";
+
 import type { MenuProps } from "@/types";
 
 import { Layout, Menu } from "@/atoms";
 const { Sider } = Layout;
 
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from "@/icons";
-
-const items2: MenuProps["items"] = [
-  UserOutlined,
+import {
   LaptopOutlined,
   NotificationOutlined,
-].map((icon, index) => {
-  const key = String(index + 1);
+  UserOutlined,
+  NextIcon,
+  ReactIcon,
+  RightCircleOutlined,
+  BookOutlined,
+} from "@/icons";
 
-  return {
-    key: `sub${key}`,
-    icon: React.createElement(icon),
-    label: `subnav ${key}`,
+const items = [
+  {
+    key: "reactUse",
+    label: <Link href="/reactUse">React Use</Link>,
+    icon: <RightCircleOutlined />,
+    children: [
+      {
+        key: "hooks",
+        label: "hooks",
+        children: [
+          {
+            key: "useMemo",
+            label: <Link href="/reactUse/hooks/reactUseMemo">useMemo</Link>,
+          },
+        ],
+      },
+      {
+        key: "others",
+        label: "others",
+        children: [
+          {
+            key: "reactMemo",
+            label: <Link href="/reactUse/others/reactMemo">React.memo</Link>,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    key: "ReactLibraries",
+    label: "React Libraries",
+    icon: <BookOutlined />,
+    children: [
+      {
+        key: "NextAuth",
+        label: <Link href="/nextAuth">NextAuth</Link>,
 
-    children: new Array(4).fill(null).map((_, j) => {
-      const subKey = index * 4 + j + 1;
-      return {
-        key: subKey,
-        label: `option${subKey}`,
-      };
-    }),
-  };
-});
+        icon: <UserOutlined />,
+      },
+    ],
+  },
+];
 
 const SideBar: FC<any> = ({ colorBgContainer, collapsed }) => {
   return (
@@ -37,11 +68,17 @@ const SideBar: FC<any> = ({ colorBgContainer, collapsed }) => {
       collapsible
       collapsed={collapsed}
     >
+      <div
+        className="demo-logo-vertical"
+        style={{ marginLeft: "30px", marginTop: "18px", marginBottom: "40px" }}
+      >
+        <NextIcon />
+      </div>
       <Menu
         theme="light"
         mode="inline"
         style={{ height: "100%", borderRight: 0 }}
-        items={items2}
+        items={items}
       />
     </Sider>
   );

@@ -14,7 +14,10 @@ export {
   MenuFoldOutlined,
   DownOutlined,
   SmileOutlined,
+  RightCircleOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 
 export { default as Icon } from "@ant-design/icons";
 export { default as ReactIcon } from "./ReactIcon";
+export { default as NextIcon } from "./NextIcon";

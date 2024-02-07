@@ -4,24 +4,30 @@ import { Fragment } from "react";
 export default function Home() {
   return (
     <Fragment>
-      <div>working...</div>
-      <div>Running Pages Index Page</div>
-      <Link href="/user">http://localhost:15000/user</Link>
+      <h1>Links</h1>
+      <h2>React JS</h2>
+      <Link
+        href="https://legacy.reactjs.org/docs/getting-started.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://legacy.reactjs.org/docs/getting-started.html
+      </Link>
       <br />
-      <h2>Use of getStaticPaths</h2>
-      <h3>fallback: false</h3>
-      <Link href="/posts">link: http://localhost:15000/posts</Link>
+      <Link
+        href="https://react.dev/learn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://react.dev/learn
+      </Link>
       <br />
-      <h3>fallback: true</h3>
-      <Link href="/blogs">link: http://localhost:15000/blogs</Link>
+      <h2>nextjs</h2>
+      <Link href="https://nextjs.org/">https://nextjs.org/</Link>
       <br />
-      <h3>fallback: default</h3>
-      <Link href="/data">link: http://localhost:15000/data</Link>
+      <h2>tailwindcss</h2>
+      <Link href="https://tailwindcss.com">https://tailwindcss.com</Link>
       <br />
-      <h2>React Use</h2>
-      <Link href="/reactUse">link: http://localhost:15000/reactUse</Link>
-      <h2>Next Auth</h2>
-      <Link href="/nextAuth">link: http://localhost:15000/nextAuth</Link>
     </Fragment>
   );
 }

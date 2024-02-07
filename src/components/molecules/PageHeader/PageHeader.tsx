@@ -30,12 +30,12 @@ const PageHeader: FC<any> = ({ operateColaps, collapsed }) => {
           </Row>
         </Col>
 
-        <Col span={2} offset={12}>
+        {/* <Col span={2} offset={12}>
           <ReactUseMenue itemName="Docs" />
         </Col>
         <Col span={2}>
           <ReactUseMenue itemName="Profile" />
-        </Col>
+        </Col> */}
       </Row>
     </Header>
   );
