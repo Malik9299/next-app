@@ -18,63 +18,84 @@ const documents = [
     label: <a href="/reactUse"> React Use</a>,
     children: [
       {
-        key: "ECMAScript",
-        label: <a href="/reactUse/esScripting">ECMAScript</a>,
-        icon: <ReactIcon />,
+        key: "hooks",
+        label: "hooks",
+        children: [
+          {
+            key: "useMemo",
+            label: <a href="/reactUse/hooks/reactUseMemo">useMemo</a>,
+            icon: <ReactIcon />,
+          },
+        ],
       },
       {
-        key: "methodsAsProps",
-        label: <a href="/reactUse/methodsAsProps">Methods As Props</a>,
-        icon: <ReactIcon />,
-      },
-      {
-        key: "reactMemo",
-        label: <a href="/reactUse/reactMemo">React.memo</a>,
-        icon: <ReactIcon />,
-      },
-      {
-        key: "reactPureComponents",
-        label: (
-          <a href="/reactUse/reactPureComponents">React Pure Components</a>
-        ),
-        icon: <ReactIcon />,
-      },
-      {
-        key: "lifecycleMethods",
-        label: (
-          <a href="/reactUse/lifecycleMethods">Components Lifecycle Methods</a>
-        ),
-        icon: <ReactIcon />,
-      },
-      {
-        key: "higherOrderComponents",
-        label: (
-          <a href="/reactUse/higherOrderComponents">Higher Order Components</a>
-        ),
-        icon: <ReactIcon />,
-      },
-      {
-        key: "renderProps",
-        label: (
-          <a href="/reactUse/renderProps">
-            Render Props Using Class Components
-          </a>
-        ),
-        icon: <ReactIcon />,
-      },
-      {
-        key: "renderProps",
-        label: (
-          <a href="/reactUse/renderPropsFC">
-            Render Props Using Functional Components
-          </a>
-        ),
-        icon: <ReactIcon />,
-      },
-      {
-        key: "context",
-        label: <a href="/reactUse/context">Context</a>,
-        icon: <ReactIcon />,
+        key: "others",
+        label: "others",
+        children: [
+          // {
+          //   key: "ECMAScript",
+          //   label: <a href="/reactUse/esScripting">ECMAScript</a>,
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "methodsAsProps",
+          //   label: <a href="/reactUse/methodsAsProps">Methods As Props</a>,
+          //   icon: <ReactIcon />,
+          // },
+          {
+            key: "reactMemo",
+            label: <a href="/reactUse/others/reactMemo">React.memo</a>,
+            icon: <ReactIcon />,
+          },
+          // {
+          //   key: "reactPureComponents",
+          //   label: (
+          //     <a href="/reactUse/reactPureComponents">React Pure Components</a>
+          //   ),
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "lifecycleMethods",
+          //   label: (
+          //     <a href="/reactUse/lifecycleMethods">
+          //       Components Lifecycle Methods
+          //     </a>
+          //   ),
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "higherOrderComponents",
+          //   label: (
+          //     <a href="/reactUse/higherOrderComponents">
+          //       Higher Order Components
+          //     </a>
+          //   ),
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "renderProps",
+          //   label: (
+          //     <a href="/reactUse/renderProps">
+          //       Render Props Using Class Components
+          //     </a>
+          //   ),
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "renderProps",
+          //   label: (
+          //     <a href="/reactUse/renderPropsFC">
+          //       Render Props Using Functional Components
+          //     </a>
+          //   ),
+          //   icon: <ReactIcon />,
+          // },
+          // {
+          //   key: "context",
+          //   label: <a href="/reactUse/context">Context</a>,
+          //   icon: <ReactIcon />,
+          // },
+        ],
       },
     ],
   },

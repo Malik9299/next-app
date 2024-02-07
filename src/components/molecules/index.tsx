@@ -7,7 +7,7 @@
 // export { default as ParentComponentPure } from "./PureComponents/ParentComponentPure";
 // export { default as PureComponent } from "./PureComponents/PureComponents";
 // export { default as RegularComponent } from "./PureComponents/RegularComponent";
-// export { default as ParentMemo } from "./MemoComponents/ParentMemo";
+export { default as ParentMemo } from "./MemoComponents/ParentMemo";
 // export { default as ParentUseMemoA } from "./UseMemo/ParentUseMemoA";
 // export { default as ES11 } from "./ECMAScript/ES11";
 // export { default as ParentHigherOrder } from "./HigherOrderComponents/ParentHigherOrder";
@@ -27,4 +27,4 @@ export { default as SideBar } from "./SideBar/SideBar";
 // export { default as BreadCrumb } from "./BreadCrumb/BreadCrumb";
 // export { default as ParentContext } from "./Context/ParentContext";
 export { default as ReactUseMenue } from "./ReactUseMenue/ReactUseMenue";
-// export { default as ParentUseMemo } from "./ReactUseMemo/ParentUseMemo";
+export { default as ParentUseMemo } from "./ReactUseMemo/ParentUseMemo";
